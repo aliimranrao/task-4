@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body style="text-align: center; background-color : black;">
+    <p id = 'rotate right' style="text-align: center; color: white;"></p>
+<script>
+var myVar = setInterval(myFunction, 300);
+    
+    var word = ' i am a Developer, i study in saylani, i am a student of intermediate';
+var newArray = word.split('');
+
+function myFunction() {
+var letter = newArray.pop();
+var newWord = newArray.unshift(letter);
+var theWord = newArray.join('');
+document.getElementById('rotate right').innerHTML = theWord;
+}
+  </script>
+</body>
+</html>
